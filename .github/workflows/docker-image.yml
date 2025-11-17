@@ -32,7 +32,7 @@ jobs:
           context: ./OnlineArt
           file: ./OnlineArt/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/fsadlab12-backend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/chaitanya-lab12practice-backend:latest
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -41,4 +41,4 @@ jobs:
           context: ./onlineartgallery
           file: ./onlineartgallery/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/fsadlab12-frontend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/chaitanya-lab12practice-frontend:latest
